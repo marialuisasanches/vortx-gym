@@ -124,6 +124,7 @@ h1 {
 
   .hero h2 {
     padding-top: 10rem;
+    font-size: var(--font-size-xl);
   }
 
   .cards {

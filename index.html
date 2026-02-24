@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -83,6 +84,37 @@
       </div>
     </section>
 
+    <section class="unidades">
+      <div>
+        <p>Unidades</p>
+        <h3>Encontre a unidade mais perto de você</h3>
+      </div>
+
+      <div class="lista-unidades">
+        <div class="unidade">
+          <h3>Jardim Paulista</h3>
+          <p>
+            Rua das Palmeiras, 324 — Jardim Paulista, São Paulo — SP, 01410‑000
+          </p>
+        </div>
+        <div class="unidade">
+          <h3>Vila Mariana</h3>
+          <p>
+            Avenida Domingos de Morais, 1.120 — Vila Mariana, São Paulo — SP,
+            04030‑000
+          </p>
+        </div>
+
+        <div class="unidade">
+          <h3>Santana</h3>
+          <p>Rua Padre Carvalho, 789 — Santana, São Paulo — SP, 02013‑001</p>
+        </div>
+      </div>
+
+      <div id="map" style="height: 500px"></div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
