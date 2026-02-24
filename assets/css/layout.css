@@ -64,7 +64,9 @@ h1 {
 }
 
 .card {
-  flex: 0 0 85%;
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 250px;
   scroll-snap-align: center;
 }
 
@@ -87,4 +89,66 @@ h1 {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
   padding: 0.1rem;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .sobre p {
+    padding-left: 3rem;
+  }
+
+  .sobre h3 {
+    text-align: left;
+    padding-left: 6rem;
+  }
+}
+
+/* NOTEBOOK */
+
+@media (min-width: 1024px) {
+  .sobre p {
+    font-size: var(--font-size-lg);
+  }
+
+  .sobre h3 {
+    font-size: var(--font-size-xl);
+  }
+  .hero {
+    background-image: url(../imgs/img-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+  }
+
+  .hero h2 {
+    padding-top: 10rem;
+  }
+
+  .cards {
+    justify-content: center;
+    overflow: visible;
+    scroll-snap-type: none;
+    padding: 0;
+  }
+
+  .card {
+    flex: 0 0 150px;
+    max-width: none;
+    scroll-snap-align: none;
+  }
+  .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* COMPUTADOR */
+
+@media (min-width: 1200px) {
+  .card {
+    flex: 0 0 200px;
+  }
 }
