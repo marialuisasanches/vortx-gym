@@ -19,18 +19,21 @@
     <link rel="stylesheet" href="./assets/css/layout.css" />
     <link rel="stylesheet" href="./assets/css/components.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Vórtx Gym</title>
+    <title>Vortx Gym</title>
   </head>
   <body>
     <header>
       <h1>Vortx Gym</h1>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Discipline.</h2>
+    <div class="membros">
+      <h3>Become a Vortx member</h3>
+      <div class="botoes-membros">
+        <button>Saiba mais</button>
+        <button>Matricule-se</button>
+        <button>Login</button>
       </div>
-    </section>
+    </div>
 
     <section class="sobre">
       <p>Sobre</p>
@@ -85,34 +88,69 @@
     </section>
 
     <section class="unidades">
-      <div>
+      <div class="unidades-descricao">
         <p>Unidades</p>
-        <h3>Encontre a unidade mais perto de você</h3>
+        <h3>Encontre a unidade mais próxima de você.</h3>
       </div>
 
-      <div class="lista-unidades">
-        <div class="unidade">
-          <h3>Jardim Paulista</h3>
-          <p>
-            Rua das Palmeiras, 324 — Jardim Paulista, São Paulo — SP, 01410‑000
-          </p>
-        </div>
-        <div class="unidade">
-          <h3>Vila Mariana</h3>
-          <p>
-            Avenida Domingos de Morais, 1.120 — Vila Mariana, São Paulo — SP,
-            04030‑000
-          </p>
-        </div>
+      <div class="mapa-unidades">
+        <div class="lista-unidades">
+          <div class="unidade">
+            <h3>Jardim Paulista</h3>
+            <p>
+              Rua das Palmeiras, 324 — Jardim Paulista, São Paulo — SP,
+              01410‑000
+            </p>
+          </div>
+          <div class="unidade">
+            <h3>Vila Mariana</h3>
+            <p>
+              Avenida Domingos de Morais, 1.120 — Vila Mariana, São Paulo — SP,
+              04030‑000
+            </p>
+          </div>
 
-        <div class="unidade">
-          <h3>Santana</h3>
-          <p>Rua Padre Carvalho, 789 — Santana, São Paulo — SP, 02013‑001</p>
+          <div class="unidade">
+            <h3>Santana</h3>
+            <p>Rua Padre Carvalho, 789 — Santana, São Paulo — SP, 02013‑001</p>
+          </div>
         </div>
+        <div id="map"></div>
       </div>
-
-      <div id="map" style="height: 500px"></div>
     </section>
+
+    <section class="discipline">
+      <div class="discipline-content">
+        <h2>Discipline.</h2>
+      </div>
+    </section>
+
+    <footer>
+      <div class="siga-home">
+        <div class="siga">
+          <p>Nos siga em &#64;vortxgym</p>
+        </div>
+
+        <div>
+          <a href="./index.html">Back to home</a>
+        </div>
+      </div>
+
+      <div class="footer-vortx">
+        <h2>Vortx gym</h2>
+      </div>
+      <div class="contato">
+        <div>
+          <p>Contato</p>
+          <p>E-mail: contato&#64;vortxgym.com</p>
+          <p>WhatsApp: +55 11 40028922</p>
+        </div>
+        <div>
+          <p>Atendimento Digital</p>
+          <p>SEG - SEX 9:00 - 18:00</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="./assets/js/main.js"></script>
