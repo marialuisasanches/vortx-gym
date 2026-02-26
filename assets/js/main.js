@@ -41,3 +41,11 @@ unidades.forEach((u) => {
     .addTo(map)
     .bindPopup(`<b>${u.nome}</b><br>${u.endereco}`);
 });
+
+document.querySelector(".back-home").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
