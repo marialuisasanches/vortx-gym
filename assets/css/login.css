@@ -1,0 +1,147 @@
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+header {
+  background-color: var(--color-neutral-9);
+}
+
+h1 {
+  color: var(--color-neutral-1);
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+}
+
+body {
+  background-image: url(../imgs/img-login-mobile.jpg);
+  color: var(--color-neutral-1);
+}
+
+.login-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  margin-top: auto;
+  border-radius: 24px 24px 0 0;
+  padding: 25px 24px;
+}
+
+.login-dados h2 {
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  font-size: var(--font-body);
+  padding-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+main .login-titulo {
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  font-size: var(--font-size-lg);
+  padding-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.senha h2 {
+  padding-top: 1rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--color-neutral-1);
+  padding: 0.4rem;
+  accent-color: var(--color-neutral-9);
+  outline: none;
+  color: var(--color-background);
+}
+
+input::placeholder {
+  color: var(--color-neutral-3);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: var(--color-neutral-1);
+  transition: background-color 5000s ease-in-out 0s;
+}
+.senha {
+  position: relative;
+}
+#toggle-senha {
+  position: absolute;
+  cursor: pointer;
+  color: var(--color-neutral-1);
+  pointer-events: all;
+  right: 10px;
+  bottom: 10px;
+}
+
+.input-senha {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+section input[type="button"] {
+  background: transparent;
+  color: var(--color-neutral-0);
+  border: 1px solid var(--color-neutral-0);
+  border-radius: 10px;
+  padding: 0.3rem 1.5rem;
+  margin: 1rem 0 1rem auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+section input[type="button"]:hover {
+  background-color: var(--color-neutral-5);
+  border: 1px solid var(--color-neutral-5);
+  color: var(--color-background);
+  text-decoration: underline;
+}
+
+footer {
+  gap: 0.5rem;
+}
+
+footer a {
+  font-weight: 700;
+  color: var(--color-neutral-3);
+}
+
+/* REPONSIVIDADE */
+/* TABLET */
+@media (min-width: 768px) {
+  body {
+    background-image: url(../imgs/img-login.jpg);
+  }
+}
+
+/* NOTEBOOK */
+
+@media (min-width: 1024px) {
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 50%;
+  }
+
+  #toggle-senha {
+    right: 280px;
+    bottom: 10px;
+  }
+}
+
+/* COMPUTADOR */
+
+@media (min-width: 1200px) {
+  #toggle-senha {
+    right: 400px;
+    bottom: 10px;
+  }
+}

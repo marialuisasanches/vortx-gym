@@ -29,35 +29,37 @@ h1 {
   text-shadow: 2px 2px 4px var(--color-neutral-7);
 }
 
-.membros button {
+.botoes-membros {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.membros .btn {
+  display: inline-block;
   font-size: 12px;
-  padding: 0.4rem 0.4rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease;
   background-color: var(--color-neutral-0);
-  color: var(--color-neutral-5);
   border: 1px solid var(--color-neutral-0);
   font-weight: 600;
   text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-neutral-5);
 }
 
-.membros button:first-child {
+.membros .btn:first-child {
   background: transparent;
-  border: 1px solid var(--color-neutral-0);
   color: var(--color-neutral-0);
 }
 
-.membros button:hover {
+.membros .btn:hover {
   background-color: var(--color-neutral-5);
   border: 1px solid var(--color-neutral-5);
   color: var(--color-background);
   text-decoration: underline;
-}
-
-.botoes-membros {
-  gap: 1.5rem;
-  margin-top: 1rem;
 }
 
 .sobre p,
@@ -208,7 +210,7 @@ h1 {
     font-size: var(--font-size-xl);
   }
 
-  .membros button {
+  .membros .btn {
     font-size: var(--font-size-lg);
   }
 
