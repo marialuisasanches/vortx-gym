@@ -31,6 +31,10 @@ header {
 .unidades .unidades-descricao h3 {
   text-align: right;
 }
+.sobre p,
+.unidades .unidades-descricao p {
+  text-align: left;
+}
 
 .cards {
   display: flex;
@@ -88,13 +92,28 @@ header {
 
 /* LOGIN  e MATRICULE-SE */
 
+/* SAIBA MAIS */
+
+.planos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.planos .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-  text-align: center;
 }
 
 /* REPONSIVIDADE */
