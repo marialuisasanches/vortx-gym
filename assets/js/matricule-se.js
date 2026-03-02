@@ -1,17 +1,33 @@
-const toggle = document.getElementById("toggle-senha");
-const senha = document.getElementById("senha");
+const toggleSenha = document.getElementById("toggle-senha");
+const toggleConfirmar = document.getElementById("toggle-confirmar");
 
-toggle.addEventListener("click", () => {
+const senha = document.getElementById("senha");
+const confirmarSenha = document.getElementById("confirmarSenha");
+
+const iconeSenha = toggleSenha.querySelector("i");
+const iconeConfirmar = toggleConfirmar.querySelector("i");
+
+toggleSenha.addEventListener("click", () => {
   if (senha.type === "password") {
     senha.type = "text";
-    toggle.classList.replace("fa-eye", "fa-eye-slash");
+    iconeSenha.classList.replace("fa-eye", "fa-eye-slash");
   } else {
     senha.type = "password";
-    toggle.classList.replace("fa-eye-slash", "fa-eye");
+    iconeSenha.classList.replace("fa-eye-slash", "fa-eye");
   }
 });
 
-const data = document.getElementById("data-nascimento");
+toggleConfirmar.addEventListener("click", () => {
+  if (confirmarSenha.type === "password") {
+    confirmarSenha.type = "text";
+    iconeConfirmar.classList.replace("fa-eye", "fa-eye-slash");
+  } else {
+    confirmarSenha.type = "password";
+    iconeConfirmar.classList.replace("fa-eye-slash", "fa-eye");
+  }
+});
+
+const data = document.getElementById("dataNascimento");
 
 data.addEventListener("change", () => {
   if (data.value) {
