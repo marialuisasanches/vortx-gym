@@ -44,6 +44,11 @@ h1 {
   gap: 0.8rem;
   justify-content: space-between;
   height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.planos .card:hover {
+  transform: scale(1.05);
 }
 
 .planos .card .top h3 {

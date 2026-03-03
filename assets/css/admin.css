@@ -1,0 +1,250 @@
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color-neutral-1);
+}
+
+h1 {
+  color: var(--color-neutral-5);
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.control {
+  display: block;
+  color: var(--color-neutral-6);
+  text-transform: uppercase;
+  font-size: var(--font-size-lg);
+  padding: 1rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  box-shadow: 2px 2px 5px rgb(32, 31, 31, 0.4);
+  background-color: var(--color-neutral-1);
+  text-align: center;
+  gap: 0.8rem;
+  height: 100%;
+  width: 18rem;
+  margin: 0 auto;
+}
+.cards h2 {
+  display: block;
+  color: var(--color-neutral-4);
+  text-transform: uppercase;
+  font-size: var(--font-size-lg);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.cards .card h3 {
+  color: var(--color-neutral-6);
+}
+
+.usuario {
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.usuario .buscar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--color-neutral-1);
+  padding: 0.4rem;
+  accent-color: var(--color-neutral-9);
+  outline: none;
+  color: var(--color-neutral-9);
+}
+
+.buscar button {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: var(--color-neutral-0);
+  border: 1px solid var(--color-neutral-0);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-neutral-5);
+}
+
+.buscar button:hover {
+  background-color: var(--color-neutral-5);
+  border: 1px solid var(--color-neutral-5);
+  color: var(--color-background);
+  text-decoration: underline;
+}
+
+.addUsuario {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: var(--color-neutral-7);
+  border: 1px solid var(--color-neutral-7);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-neutral-1);
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.addUsuario:hover {
+  background-color: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-1);
+  color: var(--color-neutral-9);
+  text-decoration: underline;
+}
+
+.tabela-alunos {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgb(32, 31, 31, 0.4);
+  background-color: var(--color-neutral-1);
+  margin: 20px 0;
+}
+
+.tabela-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 24px;
+}
+
+.tabela-alunos th {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--color-neutral-4);
+  border-bottom: 1px solid var(--color-neutral-2);
+  font-weight: 600;
+  background-color: var(--color-neutral-0);
+}
+
+.tabela-alunos td {
+  padding: 14px 20px;
+  font-size: var(--font-size-base);
+  border-bottom: 1px solid var(--color-neutral-2);
+  color: var(--color-neutral-6);
+  vertical-align: middle;
+  transition: 0.3s ease;
+}
+
+.tabela-alunos tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela-alunos tbody tr:hover td {
+  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-9);
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+  color: var(--color-neutral-4);
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .tabela-alunos th,
+  .tabela-alunos td {
+    padding: 12px 16px;
+    white-space: normal;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    text-align: left;
+    display: block;
+    padding-left: 1rem;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    height: 8rem;
+    width: 70rem;
+  }
+  .usuario {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .usuario .buscar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  input[type="text"] {
+    width: 20rem;
+  }
+
+  .addUsuario {
+    width: 15rem;
+    height: 3rem;
+  }
+
+  .tabela-alunos {
+    width: 70rem;
+    margin: 20px auto;
+  }
+
+  .tabela-alunos th,
+  .tabela-alunos td {
+    padding: 14px 20px;
+  }
+}
