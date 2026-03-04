@@ -61,7 +61,7 @@
             <!-- Data de Nascimento -->
             <div class="form-group">
               <label for="dataNascimento">Data de Nascimento</label>
-              <input type="date" id="dataNascimento" name="dataNascimento" />
+              <input type="date" id="datNasc" name="dataNascimento" />
               <span class="erro-msg" id="erro-data"
                 >Data inválida. Idade mínima: 14 anos.</span
               >
@@ -171,7 +171,7 @@
             <div class="form-group">
               <label for="planoEscolhido">Qual seu plano</label>
               <div class="select-wrapper">
-                <select id="planoEscolhido" name="planoEscolhido">
+                <select id="plano" name="planoEscolhido">
                   <option value="">Selecione um plano</option>
                   <option value="vortxStart">Vortx Start</option>
                   <option value="vortxFull">Vortx Full</option>
@@ -185,7 +185,7 @@
             <div class="form-group">
               <label for="planoModalidade">Modalidade</label>
               <div class="select-wrapper">
-                <select id="planoModalidade" name="planoModalidade">
+                <select id="modalidade" name="planoModalidade">
                   <option value="">Selecione a modalidade</option>
                   <option value="recorrente">Recorrente</option>
                   <option value="semestral">Semestral</option>
@@ -245,6 +245,7 @@
         <a href="./login.html">login</a>
       </footer>
     </div>
-    <script src="./assets/js/matricule-se.js"></script>
+    <script src="./assets/js/view/matricule-se.js"></script>
+    <script src="./assets/js/controller/alunoController.js"></script>
   </body>
 </html>

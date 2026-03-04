@@ -81,8 +81,8 @@ main {
   margin-top: 1rem;
 }
 
-input[type="text"] {
-  width: 100%;
+input[type="search"] {
+  width: 20rem;
   background-color: transparent;
   border-radius: 10px;
   border: 2px solid var(--color-neutral-1);
@@ -95,7 +95,7 @@ input[type="text"] {
 .buscar button {
   display: inline-block;
   font-size: 12px;
-  padding: 0.4rem 0.6rem;
+  padding: 0.6rem 0.6rem;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -117,7 +117,7 @@ input[type="text"] {
 .addUsuario {
   display: inline-block;
   font-size: 12px;
-  padding: 0.4rem 0.6rem;
+  padding: 0.6rem 0.6rem;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -193,6 +193,7 @@ footer {
   color: var(--color-neutral-4);
   padding: 1rem;
 }
+
 @media (min-width: 768px) {
   .tabela-alunos th,
   .tabela-alunos td {
